@@ -5,8 +5,15 @@ import 'package:emart_app/widgets_common/out_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SignUp extends StatelessWidget {
+class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
+
+  @override
+  State<SignUp> createState() => _SignUpState();
+}
+
+class _SignUpState extends State<SignUp> {
+  bool ischecked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +41,16 @@ class SignUp extends StatelessWidget {
                 children: [
                   Checkbox(
                       checkColor: redColor,
-                      value: false,
-                      onChanged: (newValue) {}),
+                      value: ischecked,
+                      onChanged: (newValue) {
+                        setState(() {
+                          if (!ischecked) {
+                            ischecked = true;
+                          } else {
+                            ischecked = false;
+                          }
+                        });
+                      }),
                   10.heightBox,
                   Expanded(
                       child: RichText(
