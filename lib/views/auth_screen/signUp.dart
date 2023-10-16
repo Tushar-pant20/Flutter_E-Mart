@@ -57,22 +57,22 @@ class _SignUpState extends State<SignUp> {
                           text: TextSpan(children: [
                     TextSpan(
                         text: "I agree to the ",
-                        style: TextStyle(fontFamily: bold, color: fontGrey)),
+                        style: TextStyle(fontFamily: regular, color: fontGrey)),
                     TextSpan(
                         text: termAndCond,
-                        style: TextStyle(fontFamily: bold, color: redColor)),
+                        style: TextStyle(fontFamily: regular, color: redColor)),
                     TextSpan(
                         text: "&",
-                        style: TextStyle(fontFamily: bold, color: fontGrey)),
+                        style: TextStyle(fontFamily: regular, color: fontGrey)),
                     TextSpan(
                         text: privacyPolicy,
-                        style: TextStyle(fontFamily: bold, color: redColor))
+                        style: TextStyle(fontFamily: regular, color: redColor))
                   ])))
                 ],
               ),
               15.heightBox,
               ourButton(
-                      color: redColor,
+                      color: ischecked == true ? redColor : lightGrey,
                       title: signup,
                       textColor: whiteColor,
                       onPress: () {})

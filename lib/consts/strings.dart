@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 const appname = "Tushar Store";
 const appversion = "Version 1.0.0";
 const credits = "@Baaba Devs";
@@ -16,3 +18,24 @@ const loginwith = "Log In with";
 const privacyPolicy = "Privacy Policy";
 const termAndCond = "Terms and Conditions";
 const alreadyHaveAccount = "Already Have an account";
+
+const home = "Home";
+const categories = "Categories";
+const cart = "Cart";
+const account = "Account";
+
+//home screen strings
+const searchAnything = "Search Anything...",
+    todaydeal = "Today's Deal",
+    flashsale = "Flash Sale",
+    topsellers = "Top Sellers",
+    brand = "Brand",
+    topcategories = "Top Categories",
+    womenDress = "Women Dress",
+    girlsWatches = "Girls Watches",
+    mobilePhone = "Mobile Phone",
+    boysGlasses = "Boys Glasses",
+    tshirts = "T-shirts",
+    girlsDress = "Girls Dresses",
+    featuredProducts = "Featured Products",
+    featuredcategories = "Featured Categories";
