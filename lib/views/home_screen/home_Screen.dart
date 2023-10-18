@@ -137,7 +137,7 @@ class HomeScreen extends StatelessWidget {
                                           "Laptop 4GB/64GB"
                                               .text
                                               .fontFamily(semibold)
-                                              .color(lightGrey)
+                                              .color(darkFontGrey)
                                               .make(),
                                           10.heightBox,
                                           "\$600"

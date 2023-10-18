@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "68235053119",
+    "project_id": "tushar-store-b4c80",
+    "storage_bucket": "tushar-store-b4c80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68235053119:android:b925ab8da8d337a7d0108a",
+        "android_client_info": {
+          "package_name": "com.example.emart_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP9K29OK-wgtfg-BY6RrwwEXU0ITzzp-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
