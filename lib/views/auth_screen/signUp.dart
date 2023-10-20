@@ -1,4 +1,6 @@
 import 'package:emart_app/consts/consts.dart';
+import 'package:emart_app/controllers/auth_controllers.dart';
+import 'package:emart_app/views/home_screen/home.dart';
 import 'package:emart_app/widgets_common/applogo_widgets.dart';
 import 'package:emart_app/widgets_common/custom_textfield.dart';
 import 'package:emart_app/widgets_common/out_buttons.dart';
@@ -14,6 +16,14 @@ class SignUp extends StatefulWidget {
 
 class _SignUpState extends State<SignUp> {
   bool ischecked = false;
+  var controller = Get.put(AuthController());
+
+  //text controllers
+
+  var nameController = TextEditingController();
+  var emailController = TextEditingController();
+  var passwordController = TextEditingController();
+  var retypePasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -28,10 +38,26 @@ class _SignUpState extends State<SignUp> {
           10.heightBox,
           Column(
             children: [
-              customTextField(hint: nameHint, title: name),
-              customTextField(hint: emailHint, title: email),
-              customTextField(hint: passwordHint, title: password),
-              customTextField(hint: retypepassword, title: retypepassword),
+              customTextField(
+                  hint: nameHint,
+                  title: name,
+                  controller: nameController,
+                  isPass: false),
+              customTextField(
+                  hint: emailHint,
+                  title: email,
+                  controller: emailController,
+                  isPass: false),
+              customTextField(
+                  hint: passwordHint,
+                  title: password,
+                  controller: passwordController,
+                  isPass: true),
+              customTextField(
+                  hint: retypepassword,
+                  title: retypepassword,
+                  controller: retypePasswordController,
+                  isPass: true),
               Align(
                   alignment: Alignment.centerLeft,
                   child: TextButton(
@@ -72,13 +98,32 @@ class _SignUpState extends State<SignUp> {
               ),
               15.heightBox,
               ourButton(
-                      color: ischecked == true ? redColor : lightGrey,
-                      title: signup,
-                      textColor: whiteColor,
-                      onPress: () {})
-                  .box
-                  .width(context.screenWidth - 50)
-                  .make(),
+                  color: ischecked == true ? redColor : lightGrey,
+                  title: signup,
+                  textColor: whiteColor,
+                  onPress: () async {
+                    if (ischecked != false) {
+                      try {
+                        await controller
+                            .signUpMethod(
+                                context: context,
+                                email: emailController.text,
+                                password: passwordController.text)
+                            .then((value) {
+                          return controller.storeUserData(
+                              email: emailController.text,
+                              passwrod: passwordController.text,
+                              name: nameController.text);
+                        }).then((value) {
+                          VxToast.show(context, msg: loggedin);
+                          Get.offAll(() => Home());
+                        });
+                      } catch (e) {
+                        auth.signOut();
+                        VxToast.show(context, msg: e.toString());
+                      }
+                    }
+                  }).box.width(context.screenWidth - 50).make(),
               10.heightBox,
               RichText(
                   text: TextSpan(children: [
