@@ -12,14 +12,13 @@ const featuredtitle1 = [womenDress, girlsDress, girlsWatches];
 const featuredtitle2 = [boysGlasses, mobilePhone, tshirts];
 
 const categoryList = [
-  womenClothing,
   menClothing,
   compAccess,
   autmobile,
   kidtoys,
   sports,
-  jewelery,
   cellphone,
+  jewelery,
   furniture
 ];
 
@@ -31,7 +30,6 @@ const categoryImages = [
   imgFc5,
   imgFc6,
   imgFc7,
-  imgFc8,
   imgFc9
 ];
 

@@ -1,0 +1,157 @@
+[
+    {
+      "id": 0,
+      "name": "NexMart - Casual Sneakers",
+      "category": "Men Clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/81S-ekaE+vS._AC_UL320_.jpg",
+      "oldPrice": "1899",
+      "price": "799"
+    },
+    {
+      "id": 1,
+      "name": "Asian - Men Bouncer",
+      "category": "Men Clothing",
+      "oldPrice": "999",
+      "imageUrl": "https://m.media-amazon.com/images/I/61hMQOHmEIL._AC_UL320_.jpg",
+      "price": "719"
+    },
+    {
+      "id": 2,
+      "name": "Sparx",
+      "category": "Men Clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/81b9Eh286BL._AC_UL320_.jpg",
+      "oldPrice": "1349",
+      "price": "944"
+    },
+    {
+      "id": 3,
+      "name": "Ethics",
+      "category": "Men Clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/61U-R3-znNL._AC_UL320_.jpg",
+      "oldPrice": "999",
+      "price": "469"
+    },
+    {
+      "id": 4,
+      "name": "Sparx",
+      "category": "Men Clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/81Ud8DjRbXL._AC_UL320_.jpg",
+      "oldPrice": "849",
+      "price": "760"
+    },
+    {
+      "id": 5,
+      "name": "Asian",
+      "category": "Men Clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/71M5-l4H-aL._AC_UL320_.jpg",
+      "oldPrice": "599",
+      "price": "449"
+    },
+    {
+      "id": 6,
+      "name": "Reebok",
+      "category": "Men Clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/71OEHq3M-9L._AC_UL320_.jpg",
+      "oldPrice": "2799",
+      "price": "1196"
+    },
+    {
+      "id": 7,
+      "name": "Sparx",
+      "category": "Men Clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/81iRr9yEzxL._AC_UL320_.jpg",
+      "oldPrice": "1049",
+      "price": "890"
+    },
+    {
+      "id": 8,
+      "name": "Reebok",
+      "category": "Men Clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/81iqNypAS-L._AC_UL320_.jpg",
+      "oldPrice": "3699",
+      "price": "999"
+    },
+    {
+      "id": 9,
+      "name": "Asian",
+      "category": "Men Clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/61Uu4ZpqCDL._AC_UL320_.jpg",
+      "oldPrice": "1499",
+      "price": "719"
+    },
+    {
+        "id": 10,
+        "name": "Nike Footwear",
+        "category": "Men Clothing",
+        "imageUrl": "https://m.media-amazon.com/images/I/61Uu4ZpqCDL._AC_UL320_.jpg",
+        "oldPrice": "1499",
+        "price": "1000"
+    },{
+        "id": 11,
+        "name": "Campus Shoes",
+        "category": "Men Clothing",
+        "imageUrl": "https://m.media-amazon.com/images/I/81iqNypAS-L._AC_UL320_.jpg",
+        "oldPrice": "800",
+        "price": "550"
+    },
+    {
+      "id": 12,
+      "name": "Slim Fit Tshirt",
+      "category": "Men Clothing",
+      "imageUrl": "https://sp.yimg.com/ib/th?id=OPA.w2fSKIiOMm6xZA474C474&o=5&pid=21.1&w=174&h=174",
+      "oldPrice": "800",
+      "price": "550"
+    },
+    {
+      "id": 13,
+      "name": "Mac Book Air 2",
+      "category": "Computer & Accessories",
+      "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.ue0rcFB71HwXrnrvGFFhbQHaHa&pid=Api&P=0&h=180",
+      "oldPrice": "1,10,000",
+      "price": "1,05,999"
+    },
+    {
+      "id": 14,
+      "name": "Dell Mouse",
+      "category": "Computer & Accessories",
+      "imageUrl": "https://www.bhphotovideo.com/images/images1000x1000/dell_pxk14_wm123_optical_mouse_1135878.jpg",
+      "oldPrice": "2200",
+      "price": "2250"
+    },
+    {
+      "id": 15,
+      "name": "HP Laptop",
+      "category": "Computer & Accessories",
+      "imageUrl": "https://tse2.mm.bing.net/th?id=OIP.Vgy3MLKkzCyX2JbdCl-PugHaE3&pid=Api&P=0&h=180",
+      "oldPrice": "6200",
+      "price": "59,999"
+    },{
+      "id": 16,
+      "name": "Cusion Sofa",
+      "category": "Furniture",
+      "imageUrl": "https://tse4.mm.bing.net/th?id=OIP.TizgmrV4EQ0bqINFk5gCAAHaEf&pid=Api&P=0&h=180",
+      "oldPrice": "50,000",
+      "price": "31,000"
+    },{
+      "id": 17,
+      "name": "Comfy bean bags",
+      "category": "Furniture",
+      "imageUrl": "https://tse2.mm.bing.net/th?id=OIP.ruwsARg5dM6_OW4ZEY9FmgHaHa&pid=Api&P=0&h=180",
+      "oldPrice": "1200",
+      "price": "750"
+    },{
+      "id": 18,
+      "name": "Iphone 15 pro max",
+      "category": "Cellphone &  Tab",
+      "imageUrl": "https://tse2.mm.bing.net/th?id=OIP.f0TxVuQRnOhEoQq9JCmlzwHaHa&pid=Api&P=0&h=180",
+      "oldPrice": "80,000",
+      "price": "79,000"
+    },{
+      "id": 19,
+      "name": "Realme Narzo",
+      "category": "Cellphone &  Tab",
+      "imageUrl": "https://tse1.mm.bing.net/th?id=OIP.Duv4X3gqkPmZveqnwesi-AHaHa&pid=Api&P=0&h=180",
+      "oldPrice": "12,000",
+      "price": "11,999"
+    }
+  ]
