@@ -2,6 +2,7 @@ import 'package:emart_app/consts/consts.dart';
 import 'package:emart_app/controllers/home_controller.dart';
 import 'package:emart_app/views/Category_screen/category_screen.dart';
 import 'package:emart_app/views/Profile_screen/Profile_Screen.dart';
+import 'package:emart_app/views/cart_screen/cart.dart';
 import 'package:emart_app/views/cart_screen/cart_screen.dart';
 import 'package:emart_app/views/home_screen/home_Screen.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,7 @@ class Home extends StatelessWidget {
             icCart,
             width: 26,
           ),
-          label: cart),
+          label: 'cart'),
       BottomNavigationBarItem(
           icon: Image.asset(
             icProfile,
@@ -44,7 +45,7 @@ class Home extends StatelessWidget {
     var navBody = [
       HomeScreen(),
       CategoryScreen(),
-      CartScreen(),
+      CartList(cart: shoppingCart),
       ProfileScreen()
     ];
 

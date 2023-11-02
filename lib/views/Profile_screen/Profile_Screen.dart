@@ -27,7 +27,7 @@ class ProfileScreen extends StatelessWidget {
               //user detail section
               Row(
                 children: [
-                  Image.asset(imgProfile2, width: 80, fit: BoxFit.cover)
+                  Image.asset(imgProfile, width: 80, fit: BoxFit.contain)
                       .box
                       .roundedFull
                       .clip(Clip.antiAlias)

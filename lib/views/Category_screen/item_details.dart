@@ -1,4 +1,7 @@
 import 'package:emart_app/consts/consts.dart';
+import 'package:emart_app/views/cart_screen/cart.dart';
+import 'package:emart_app/views/cart_screen/cart_item.dart';
+import 'package:emart_app/views/cart_screen/cart_screen.dart';
 import 'package:flutter/material.dart';
 
 class ProductScreen extends StatelessWidget {
@@ -64,7 +67,17 @@ class ProductScreen extends StatelessWidget {
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {
-                      // Implement your "Add to Cart" functionality here
+                      try {
+                        final parsedPrice = double.parse(price);
+                        final item = CartItem(name, parsedPrice, imageUrl, 1);
+                        shoppingCart.addItem(item);
+                      } catch (e) {
+                        // Handle the parsing error here, e.g., show an error message or use a default value.
+                        print('Error: $e');
+                        // You can use a default price, for example:
+                        final item = CartItem(name, 0.0, imageUrl, 1);
+                        shoppingCart.addItem(item);
+                      }
                     },
                     style: ElevatedButton.styleFrom(
                         fixedSize: Size(double.infinity, 50)),
